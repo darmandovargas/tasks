@@ -1,0 +1,34 @@
+<form [formGroup]="taskForm" #formDir="ngForm" w>
+  <div [hidden]="formDir.submitted">
+    <h4>Create Task</h4>
+    <input id="id" type="hidden" class="form-control" formControlName="id">
+    <div class="form-group">
+      <label class="center-block" for="name">Task Name:</label>
+      <input id="name" class="form-control" formControlName="name" required>
+    </div>
+    <div class="form-group">
+      <label class="center-block" for="priority">Priority:</label>
+      <select id="priority" formControlName="priority"  class="form-control">
+        <option *ngFor="let p of priorities" [value]="p">{{p}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="center-block">Due Date:
+        <mat-form-field>
+          <input id="dueDate" formControlName="dueDate" matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </label>
+    </div>
+    <br>
+    <div style="margin-bottom: 1em">
+      <button type="submit" [disabled]="taskForm.invalid" (click)="onSubmit()" class="btn btn-success">Save</button> &nbsp;
+      <button type="button" (click)="reset()" [disabled]="taskForm.pristine" class="btn btn-danger">Reset</button>
+    </div>
+  </div>
+</form>
+<div class="submitted-message" *ngIf="formDir.submitted">
+  <p>You've submitted your task, {{ taskForm.value.name }}!</p>
+  <button (click)="formDir.resetForm({})">Add new Task</button>
+</div>

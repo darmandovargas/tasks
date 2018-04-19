@@ -1,0 +1,40 @@
+<h4 *ngIf="auth.isAuthenticated()">
+  <h1>Welcome to My Task Application !!</h1>
+  <br>
+  <br>
+  <div class="">
+    <button mat-raised-button class="btn btn-success" (click)="openDialog(0)">Create Task</button>
+
+    <mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Task </mat-header-cell>
+        <mat-cell *matCellDef="let task" (click)="openDialog(task);"> {{task.name}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="priority">
+        <mat-header-cell *matHeaderCellDef> Priority </mat-header-cell>
+        <mat-cell *matCellDef="let task" (click)="openDialog(task);"> {{task.priority}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="dueDate">
+        <mat-header-cell *matHeaderCellDef> Expiration Date </mat-header-cell>
+        <mat-cell *matCellDef="let task" (click)="openDialog(task);"> {{task.dueDate}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> Delete </mat-header-cell>
+        <mat-cell *matCellDef="let task">
+          <a (click)="deleteTask(task._id);" href="#">Delete</a>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let task; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+</h4>
+<h4 *ngIf="!auth.isAuthenticated()">
+  You are not logged in! Please
+  <a (click)="auth.login()">Log In</a> to continue.
+</h4>
