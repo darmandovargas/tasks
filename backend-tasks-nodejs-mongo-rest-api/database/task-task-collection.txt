@@ -1,43 +1,14 @@
 { 
-    "_id" : ObjectId("5a58026700d99c2459c8b0c7"), 
-    "name" : "Task 1", 
-    "priority" : "Low", 
-    "expirationDate" : "01/01/2018", 
+    "_id" : ObjectId("5ad8a3ce3d45af1d5a307c0a"), 
+    "name" : "test", 
+    "priority" : "Normal", 
+    "dueDate" : "2018-04-25T05:00:00.000Z", 
     "__v" : NumberInt(0)
 }
 { 
-    "_id" : ObjectId("5a58027600d99c2459c8b0c8"), 
-    "name" : "Task 2", 
-    "priority" : "Medium", 
-    "expirationDate" : "01/18/2018", 
-    "price" : "1000000", 
-    "__v" : NumberInt(0)
-}
-{ 
-    "_id" : ObjectId("5a5beb7e3ea3932dcfdde2b8"), 
-    "name" : "Task 3", 
-    "priority" : "High", 
-    "expirationDate" : "25/01/2018", 
-    "__v" : NumberInt(0)
-}
-{ 
-    "_id" : ObjectId("5a5bed2e3ea3932dcfdde2b9"), 
-    "name" : "Task 4", 
-    "priority" : "Low", 
-    "expirationDate" : "17/01/2018", 
-    "__v" : NumberInt(0)
-}
-{ 
-    "_id" : ObjectId("5a5bed383ea3932dcfdde2ba"), 
-    "name" : "Task 5", 
-    "priority" : "Low", 
-    "expirationDate" : "01/01/2018", 
-    "__v" : NumberInt(0)
-}
-{ 
-    "_id" : ObjectId("5a5bee3b3ea3932dcfdde2bb"), 
-    "name" : "Task 6", 
-    "priority" : "Low", 
-    "expirationDate" : "01/01/2018", 
+    "_id" : ObjectId("5ad8b1742ff317213e6afc2a"), 
+    "name" : "Test 1", 
+    "priority" : "Normal", 
+    "dueDate" : "2018-04-03T05:00:00.000Z", 
     "__v" : NumberInt(0)
 }
