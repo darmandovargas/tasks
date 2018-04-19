@@ -1,8 +1,27 @@
-# Aplicación Frontend Tasks con Login Auth0 Angular 5 y Consume Servicio en NodeJS
+# Task Application Frontend with Auth0 Login, Angular 5 and NodeJS
 
-![alt text]()
+First view of the application:
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/Login_1.png)
 
-![alt text]()
+Starts the single sign on with google:
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/Login_2.png)
+
+Select your account:
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/Login_3.png)
+
+First view of the application:
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/App_1.png)
+
+Install the cors plugin for chrome as there is a TODO in order to allow crossdomain:
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/CORS_1.png)
+
+View after enable the CORS plugin_
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/CORS_2.png)
+
+Create a task:
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/Create_1.png)
+
+![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/Create_2.png)
 
 
 Angular Front Test. It was created with Angular 5, it's a mock tasks list CRUD, it works with a NodeJS service backend(https://github.com/darmandovargas/tasks).
