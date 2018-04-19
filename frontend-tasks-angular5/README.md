@@ -24,7 +24,7 @@ Create a task:
 ![alt text](https://raw.githubusercontent.com/darmandovargas/tasks/master/frontend-tasks-angular5/Create_2.png)
 
 
-Angular Front Test. It was created with Angular 5, it's a mock tasks list CRUD, it works with a NodeJS service backend(https://github.com/darmandovargas/tasks).
+This is an Angular with NodeJS and MongoDB application. It was created with Angular 5, it's a mock tasks list CRUD, it works with a NodeJS service backend(https://github.com/darmandovargas/tasks).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
@@ -55,6 +55,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Spanish
 
 Aplicación implementada con Angular 5, tiene un login con Auth0 para listar las tareas que vienen de un servicio [NodeJS] (https://github.com/darmandovargas/tasks)
+
+Thanks for visiting my repo !!
+
+Diego Vargas
 
 
 
