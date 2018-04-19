@@ -23,6 +23,4 @@ Este proyecto fue creado con el IDE WebStorm.
 
 La idea de éste ejercicio es la creación de un API REST con NodeJS y MongoDB.
 
-![alt text](https://raw.githubusercontent.com/darmandovargas/tasks)
-
 
